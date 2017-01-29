@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# WHAT?
+# will drop disk cache from memory
+
+# WHY?
+# to test disk speeds without a reboot
+
+# source: http://unix.stackexchange.com/questions/87908/how-do-you-empty-the-buffers-and-cache-on-a-linux-system
+
+free && sync
+sudo sh -c 'echo 3 >/proc/sys/vm/drop_caches'
+free

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# WHAT?
+# alias to compress folders with multiple threads
+
+# WHY?
+# default compression tools are single threaded, eg. too slow
+
+7z a "$2" "$1" -m0=lzma2 -mx1 
