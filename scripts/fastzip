@@ -6,4 +6,7 @@
 # WHY?
 # default compression tools are single threaded, eg. too slow
 
+# Requirements
+# p7zip
+
 7z a "$2" "$1" -m0=lzma2 -mx1 
