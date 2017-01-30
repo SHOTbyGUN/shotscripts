@@ -1,6 +1,7 @@
 # shotscripts
 
-Scripts hopefully worth sharing
+Shell scripts for Linux
+hopefully worth sharing
 
 # How to install
 
