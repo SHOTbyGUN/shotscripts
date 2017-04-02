@@ -1,1 +1,7 @@
-/usr/bin/bootGovernor
+#!/bin/sh
+
+# set governor to ondemand
+echo ondemand | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+# set ondemand up_threshold to wanted level
+echo -n 75 > /sys/devices/system/cpu/cpufreq/ondemand/up_threshold
+
