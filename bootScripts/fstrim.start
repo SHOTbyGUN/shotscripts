@@ -1,1 +1,2 @@
-fstrim /
+date +"%Y-%m-%d %T" >> /var/log/shotfstrim.log
+fstrim --verbose / >> /var/log/shotfstrim.log
