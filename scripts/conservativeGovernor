@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# WHAT?
+# will toggle cpu frequency governor for all cores, between ondemand and performance
+
+# WHY?
+# ondemand governor does not work correctly on AMD-FX series processors
+# using ondemand with gaming workload will cause framerate stutter and performance mode fixes it
+
+# made by SHOT(by)GUN at 17.7.2016
+
+currentGovernor=$(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor)
+
+if [ "$currentGovernor" == "performance" ]
+then
+    echo conservative | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+else
+    echo performance | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+fi

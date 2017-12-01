@@ -1,0 +1,3 @@
+# autostart dkms
+date +"%Y-%m-%d %T" >> /var/log/shotdkms.log
+dkms autoinstall >> /var/log/shotdkms.log

@@ -1,8 +1,0 @@
-[Unit]
-Description=bootGovernor
-
-[Service]
-ExecStart=/usr/bin/bootGovernor
-
-[Install]
-WantedBy=multi-user.target
