@@ -1,3 +1,0 @@
-# autostart dkms
-date --iso-8601=s >> /var/log/shotdkms.log
-dkms autoinstall >> /var/log/shotdkms.log
